@@ -1,1 +1,9 @@
 /* Add your custom css styles */
+body, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, p, p.lead {
+    font-family: "dinregular",Helvetica,Arial,sans-serif!important;
+}
+
+.kinesic-header {
+    background-color: black!important;
+}
+
