@@ -2,30 +2,24 @@
 
 {% load staticfiles %}
 {% block content %}
-<div id="scroll-container">
-    <div id="cover-container">
-        <!--<img src="{% static 'img/cover.jpg' %}" id="cover-bg" class="img-responsive" alt="cover" /> -->
-    </div>
-    <div id="audience-container">
-    <!-- <img src="{% static 'img/audience.png' %}" id="audience-bg" class="img-responsive" alt="cover" /> -->
-    </div>
-</div>
-<div class="container" id="bio-container">
-    <div class="row">
-    <div class="page-header">
-        <h2>Bio</h2>
-    </div>
-    <div class="bio-description">
-        <p>Kinesic es una formación musical malagueña, compuesta en la actualidad por: Raúl Molina (Guitarra y coros), Jose López (Voz principal), Francisco Jurado (bajo), Juan Carlos Ramos (Batería) y Miguel Barrientos (guitarra y teclados). La agrupación nace en junio del 2012, tras la disolución de otra banda malagueña de rock progresivo, Habitación 103, de la cual formaban parte cuatro de los miembros de Kinesic.</p>
-    </div>
-    <img src="{% static 'img/cover.jpg' %}" class="img-responsive img-thumbnail">
+    <section class="kinesic-section-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 kinesic-col-header">
+                    <img class="img img-responsive" src="{% static 'core/images/kinesic-header.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="bio-description">
-        <p>Decididos a crear un grupo donde primasen la definición de sonido y las ganas de trabajar juntos, en noviembre de 2013 Francisco Jurado se incorporó al proyecto, y posteriormente, en junio de 2014, la formación definitiva se asienta con la llegada de Miguel (también ex-Habitación103). Kinesic se consolida como una banda con un estilo personal, sin antecedentes en la ciudad de Málaga, un sonido actual y equilibrado, fruto de la experiencia y con un objetivo definido desde el comienzo: darse a conocer en el ámbito nacional.</p>
-    </div>
+    <section class="p-b-10" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
 
-    <img src="{% static 'img/cover.jpg' %}" class="img-responsive img-thumbnail">
-    </div>
-</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 {% endblock content %}
