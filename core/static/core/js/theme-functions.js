@@ -1365,7 +1365,7 @@ var INSPIRO = {};
 		INSPIRO.sidePanel(),
 		INSPIRO.fullScreenPanel(),
 		INSPIRO.multiScroll(),
-		INSPIRO.smothScroll(),
+		// INSPIRO.smothScroll(),
 		INSPIRO.mouseScroll(),
 		INSPIRO.textRotator(),
 		INSPIRO.accordion(),
