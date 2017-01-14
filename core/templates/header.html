@@ -1,10 +1,10 @@
 {% load staticfiles %}
-<!-- HEADER -->
-<header id="header" class="header-transparent header-dark header-navigation-light kinesic-header">
-    <div id="header-wrap">
-        <div class="container">
+<div class="row">
+    <!-- HEADER -->
+    <header id="header" class="header-transparent header-dark header-navigation-light kinesic-header">
+        <div id="header-wrap">
             <!--LOGO-->
-            <div id="logo">
+            <div id="logo" class="col-xs-3 col-xs-offset-1 col-sm-2 col-sm-offset-1>
                 <a href="index.html" class="logo" data-dark-logo="{% static 'core/images/kinesic-logo.png' %}">
                     <img src="{% static 'core/images/kinesic-logo.png' %}" alt="Polo Logo">
                 </a>
@@ -12,14 +12,14 @@
             <!--END: LOGO-->
 
             <!--MOBILE MENU -->
-            <div class="nav-main-menu-responsive">
+            <div class="col-xs-2 nav-main-menu-responsive">
                 <button data-toggle="collapse" data-target=".main-menu-collapse"><i class="fa fa-navicon"></i></button>
             </div>
             <!--END: MOBILE MENU -->
 
             <!--NAVIGATION-->
-            <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
-                <div class="container">
+            <div class="col-xs-10 col-sm-8">
+                <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
                     <nav id="mainMenu" class="main-menu mega-menu">
                         <ul class="main-menu nav nav-pills">
                             <li class="dropdown"><a href="{% url 'landing' %}">Home</a></li>
@@ -35,6 +35,6 @@
             </div>
             <!--END: NAVIGATION-->
         </div>
-    </div>
-</header>
-<!-- END: HEADER -->
+    </header>
+    <!-- END: HEADER -->
+</div>

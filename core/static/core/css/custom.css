@@ -1,6 +1,12 @@
 /* Add your custom css styles */
-body, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, p, p.lead {
+body, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, p, p.lead, td, th, tbody{
     font-family: "dinregular",Helvetica,Arial,sans-serif!important;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 h1 {
@@ -38,10 +44,18 @@ h1 {
     color: white;
 }
 
-#header.header-dark.header-navigation-light .main-menu > ul > li > a {
+#header.header-dark.header-navigation-light .main-menu  ul > li > a {
     color: white;
 }
 
+footer {
+    color: black;
+    background-color: white;
+}
+
+footer a {
+    color: black;
+}
 
 #social-fb:hover {
  color: #3B5998;
@@ -49,9 +63,9 @@ h1 {
 #social-tw:hover {
  color: #4099FF;
 }
-#social-gp:hover {
+#social-yt:hover {
  color: #d34836;
 }
-#social-em:hover {
- color: #f39c12;
+#social-sp:hover {
+ color: #1ed760;
 }

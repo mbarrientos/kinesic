@@ -551,12 +551,7 @@ var INSPIRO = {};
 	//----------------------------------------------------/
 	// MAIN MENU FIXES
 	//----------------------------------------------------/
-	mainmenuitems.on('click', function () {
-		//mainmenuitems.toggleClass('resp-active', false);
-		$(this).parent('ul li').toggleClass("resp-active", 1000, "easeOutSine");
-		return false;
 
-	});
 
 	mainsubmenuitems.on('click', function () {
 		$(this).parent('li').toggleClass('resp-active');
