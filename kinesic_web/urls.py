@@ -19,10 +19,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 
-from core.views import EventsView
+from core.views import TourView
 
 urlpatterns = [
-    url(r'^$', include('core.urls')),
+    url(r'^', include('core.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^events/', EventsView.as_view()),
+    url(r'^events/', TourView.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

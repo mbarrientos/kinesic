@@ -1,12 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Events</title>
-</head>
-<body>
-Events
-{{ }}
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% load staticfiles %}
+{% block content %}
+    <section class="kinesic-section-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="page-header">
+                        <h2>Agenda</h2>
+                    </div>
+                    {% if object_list %}
+                        <table class="table">
+                            <thead>
+                            <th>Name</th>
+                            <th>Lugar</th>
+                            <th>Fecha</th>
+                            </thead>
+                            <tbody>
+                            {% for event in object_list %}
+                                <tr>
+                                    <td><a href="/tour/{{ event.id }}/">{{ event.title }}</a></td>
+                                    <td><a href="/tour/{{ event.id }}/">{{ event.description }}</a></td>
+                                    <td><a href="/tour/{{ event.id }}/">{{ event.date }}</a></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <h2>Sorry, nobody wants Kinesic to play live! :( </h2>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="kinesic-separator"></div>
+
+    <section class="p-b-10 kinesic-section-bio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Bio</h1>
+                    <p>
+                        Kinesic is an alternative rock band coming from Málaga (Spain). Since 2012, Kinesic
+                        has always been specialised on achieving the exact balance between a powerful sound and
+                        hypnotising ambience sections. The spirit of the band is to bring fresh and original ideas
+                        to the progressive rock scene, with songs crafted by musicians that share one concept: a whole
+                        life dedicated to do exactly this.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img img-responsive img-rounded" src="{% static 'core/images/kinesic-lineup.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

@@ -1,6 +1,8 @@
 from django.conf.urls import url
-from core import views
+
+from core.views import LandingView, TourView
 
 urlpatterns = [
-    url(r'^$', views.landing, name='landing'),
+    url(r'^$', LandingView.as_view(), name='landing'),
+    url(r'^tour/?', TourView.as_view(), name='tour'),
 ]

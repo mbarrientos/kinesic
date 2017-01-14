@@ -1,16 +1,13 @@
 # Create your views here.
-from django.views import View
-from django.views.generic import TemplateView
-from django.shortcuts import render
+from django.views.generic import TemplateView, ListView
 
 from core.models import Event
 
 
-class EventsView(TemplateView):
+class TourView(ListView):
     model = Event
     template_name = 'events.html'
 
-def landing(request):
-    context = {}
 
-    return render(request, 'index.html', context)
+class LandingView(TemplateView):
+    template_name = 'index.html'

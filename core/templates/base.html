@@ -2,67 +2,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
-        <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
 
-        {% block title %}
-            <title>Kinesic Official Site</title>
-        {% endblock %}
+    {% block title %}
+        <title>Kinesic Official Site</title>
+    {% endblock %}
 
-        <!-- Bootstrap Core CSS -->
-        <link href="{% static 'core/vendor/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'core/vendor/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
-{#        <link href="{% static 'core/vendor/animate.min.css' %}" rel="stylesheet">#}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'core/vendor/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/vendor/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
+    {#        <link href="{% static 'core/vendor/animate.min.css' %}" rel="stylesheet">#}
 
-        <!-- Vendor css -->
-{#        <link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet">#}
-{#        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">#}
+    <!-- Vendor css -->
+    {#        <link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet">#}
+    {#        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">#}
 
-        <!-- Template base -->
-        <link href="{% static 'core/css/theme-base.css' %}" rel="stylesheet">
-        <link href="{% static 'core/css/theme-elements.css' %}" rel="stylesheet">
-        <link href="{% static 'core/css/responsive.css' %}" rel="stylesheet">
+    <!-- Template base -->
+    <link href="{% static 'core/css/theme-base.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/theme-elements.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/responsive.css' %}" rel="stylesheet">
 
-        <!-- Custom fonts -->
-        <link href="{% static 'core/css/kinesic-font.css' %}" rel="stylesheet">
+    <!-- Custom fonts -->
+    <link href="{% static 'core/css/kinesic-font.css' %}" rel="stylesheet">
 
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
 
-        <!-- Template color -->
-        <link href="{% static 'core/css/blue.css' %}" rel="stylesheet" type="text/css" media="screen">
+    <!-- Template color -->
+    <link href="{% static 'core/css/blue.css' %}" rel="stylesheet" type="text/css" media="screen">
 
-        <!-- LOAD GOOGLE FONTS -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+    <!-- LOAD GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800"
+          rel="stylesheet" type="text/css"/>
 
-        <!-- CSS CUSTOM STYLE -->
-        <link rel="stylesheet" type="text/css" href="{% static 'core/css/custom.css' %}" media="screen" />
+    <!-- CSS CUSTOM STYLE -->
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/custom.css' %}" media="screen"/>
 
-    </head>
+</head>
 
-    <body class="wide">
+<body class="wide">
 
-        <div class="wrapper">
-            {% include 'header.html' %}
+<div class="wrapper">
+    {% include 'header.html' %}
 
-            {% block content %}
+    {% block content %}
 
-            {% endblock %}
-        </div>
+    {% endblock %}
 
-        <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+    {% include 'footer.html' %}
+</div>
 
-        <script src="{% static 'core/vendor/jquery-1.11.2.min.js' %}"></script>
-        <script src="{% static 'core/vendor/plugins-compressed.js' %}"></script>
-        <script src="{% static 'core/js/theme-functions.js' %}"></script>
-        <script src="{% static 'core/js/custom.js' %}"></script>
+<a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
 
-    </body>
+<script src="{% static 'core/vendor/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'core/vendor/plugins-compressed.js' %}"></script>
+<script src="{% static 'core/js/theme-functions.js' %}"></script>
+<script src="{% static 'core/js/custom.js' %}"></script>
+
+</body>
 
 </html>
