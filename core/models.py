@@ -13,3 +13,13 @@ class Event(models.Model):
     class Meta:
         verbose_name = 'event'
         verbose_name_plural = 'events'
+
+class GalleryPhoto(models.Model):
+
+    title = fields.CharField(max_length=100, blank=True, null=True, verbose_name=_('Gallery Photo'))
+    image = models.ImageField(upload_to='gallery_photos/')
+    uploaded_at = fields.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'gallery photo'
+        verbose_name_plural = 'gallery photos'

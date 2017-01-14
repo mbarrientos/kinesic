@@ -1,2 +1,5 @@
 Django==1.10.4
-django-configurations
+django-configurations==2.0
+olefile==0.44
+Pillow==4.0.0
+wheel==0.24.0
