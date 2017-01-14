@@ -34,6 +34,7 @@ h1 {
 
 .kinesic-player {
     margin:auto;
+    width: 350px;
 }
 
 #header.header-sticky #header-wrap {
