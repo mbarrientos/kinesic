@@ -41,6 +41,11 @@ h1 {
     background-color: black;
 }
 
+.img-gallery {
+    margin:auto;
+    cursor:pointer;
+}
+
 #header.header-sticky #header-wrap {
     background-color: black;
 }

@@ -68,14 +68,14 @@
                         <img data-toggle="modal"
                             data-target="#product{{ photo.id }}"
                              alt="{{ photo.title }}"
-                             class="img img-responsive"
+                             class="img img-responsive img-gallery"
                              src="{{ photo.image.url }}">
 
                         <div class="modal fade" id="product{{ photo.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                           <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                               <div class="modal-body">
-                                <img src="{{ photo.image.url }}" class="img img-responsive" style="margin:auto;">
+                                <img src="{{ photo.image.url }}" class="img img-responsive">
                               </div>
                             </div>
                           </div>
