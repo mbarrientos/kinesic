@@ -10,6 +10,13 @@ $("#bio-link").click(function(event) {
 $("#player-link").click(function(event) {
     event.preventDefault();
     $('html, body').animate({
-        scrollTop: $("#player").offset().top - 70
+        scrollTop: $("#player").offset().top
+    }, 500);
+});
+
+$("#gallery-link").click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#gallery").offset().top
     }, 500);
 });

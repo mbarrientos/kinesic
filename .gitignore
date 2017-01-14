@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 *.sqlite3
+media/
 # Distribution / packaging
 .Python
 env/
