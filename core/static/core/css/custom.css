@@ -37,6 +37,10 @@ h1 {
     width: 350px;
 }
 
+.modal-content {
+    background-color: black;
+}
+
 #header.header-sticky #header-wrap {
     background-color: black;
 }
