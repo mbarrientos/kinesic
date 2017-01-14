@@ -32,6 +32,10 @@ h1 {
     padding-top: 80px;
 }
 
+.kinesic-player {
+    margin:auto;
+}
+
 #header.header-sticky #header-wrap {
     background-color: black;
 }
