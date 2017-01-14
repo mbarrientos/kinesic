@@ -48,6 +48,10 @@ h1 {
     color: white;
 }
 
+#mainMenu {
+    padding-right: 20px;
+}
+
 footer {
     color: black;
     background-color: white;
