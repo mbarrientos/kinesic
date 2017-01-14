@@ -44,6 +44,7 @@ h1 {
 .img-gallery {
     margin:auto;
     cursor:pointer;
+    margin-top: 10px;
 }
 
 #header.header-sticky #header-wrap {
