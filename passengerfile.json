@@ -3,5 +3,5 @@
   "app_type": "wsgi",
   "startup_file": "kinesic_web/wsgi.py",
   "port": "8000",
-  "nginx_config_template": "config/nginx.conf.erb"
+  "address": "0.0.0.0"
 }

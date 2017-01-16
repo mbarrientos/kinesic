@@ -2,7 +2,8 @@
 ##      contentkb-api   ##
 ##      Dockerfile      ##
 ##########################
-FROM python:3.5-onbuild
+FROM python:3.5
+
 # Add Phusion ppa
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
 RUN apt-get update && \
@@ -14,7 +15,15 @@ RUN sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger jess
 RUN apt-get update && \
     apt-get install -y \
         python-psycopg2 \
+        nginx-extras \
         passenger
 
-EXPOSE 8000
+WORKDIR /usr/src/app
+
+COPY requirements.txt /usr/src/app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /usr/src/app
+
+EXPOSE 80
 CMD ["python", "./run.py"]

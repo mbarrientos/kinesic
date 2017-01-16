@@ -31,5 +31,5 @@ class Development(Base):
 
     AUTH_PASSWORD_VALIDATORS = []
 
-    STATIC_URL = '/static/'
+    STATIC_URL = '/public/'
     MEDIA_URL = '/media/'
