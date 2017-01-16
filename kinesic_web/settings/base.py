@@ -8,7 +8,6 @@ from configurations import Configuration, values
 
 
 class Base(Configuration):
-
     # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -62,7 +61,6 @@ class Base(Configuration):
 
     WSGI_APPLICATION = 'kinesic_web.wsgi.application'
 
-
     # Password validation
     # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
@@ -97,8 +95,9 @@ class Base(Configuration):
     # Static files (CSS, JavaScript, Images)
     # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-    STATIC_URL = '/static/'
+    STATIC_URL = 'http://localhost/static/'
     STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static/'))
 
-    MEDIA_URL = '/media/'
+    MEDIA_URL = 'http://localhost/media/'
     MEDIA_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'media/'))
+

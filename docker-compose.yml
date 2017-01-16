@@ -1,0 +1,29 @@
+###########################
+##     Docker Compose    ##
+##                       ##
+###########################
+version: '2'
+services:
+  app:
+    build: .
+    image: kinesic
+    ports:
+      - "80:8000"
+    volumes:
+      - .:/usr/src/app/
+      - ./logs/kinesic:/var/log/kinesic
+    links:
+      - postgres
+    environment:
+      - DB_DEFAULT_HOST=${DB_DEFAULT_HOST}
+      - DB_DEFAULT_PORT=${DB_DEFAULT_PORT}
+      - DB_DEFAULT_USER=${DB_DEFAULT_USER}
+      - DB_DEFAULT_PASSWORD=${DB_DEFAULT_PASSWORD}
+      - DB_DEFAULT_NAME=${DB_DEFAULT_NAME}
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=${DB_DEFAULT_USER}
+      - POSTGRES_PASSWORD=${DB_DEFAULT_PASSWORD}
+      - POSTGRES_DB=${DB_DEFAULT_NAME}

@@ -6,6 +6,8 @@ import os
 
 from kinesic_web.settings.base import Base
 
+__all__ = ['Development']
+
 
 class Development(Base):
     # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,3 +30,6 @@ class Development(Base):
     }
 
     AUTH_PASSWORD_VALIDATORS = []
+
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
