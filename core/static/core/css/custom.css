@@ -1,6 +1,6 @@
 /* Add your custom css styles */
-body, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, p, p.lead, td, th, tbody{
-    font-family: "dinregular",Helvetica,Arial,sans-serif!important;
+body, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a, p, p.lead, td, th, tbody {
+    font-family: "dinregular", Helvetica, Arial, sans-serif !important;
     background-color: black;
     color: white;
 }
@@ -10,12 +10,12 @@ a {
 }
 
 h1 {
-    color:white;
+    color: white;
     border-bottom: 2px solid white;
 }
 
 .kinesic-header {
-    background-color: black!important;
+    background-color: black !important;
 }
 
 .kinesic-col-header {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .kinesic-player {
-    margin:auto;
+    margin: auto;
     width: 350px;
 }
 
@@ -42,8 +42,8 @@ h1 {
 }
 
 .img-gallery {
-    margin:auto;
-    cursor:pointer;
+    margin: auto;
+    cursor: pointer;
     margin-top: 10px;
 }
 
@@ -59,7 +59,7 @@ h1 {
     color: white;
 }
 
-#header.header-dark.header-navigation-light .main-menu  ul > li > a {
+#header.header-dark.header-navigation-light .main-menu ul > li > a {
     color: white;
 }
 
@@ -77,14 +77,23 @@ footer a {
 }
 
 #social-fb:hover {
- color: #3B5998;
+    color: #3B5998;
 }
+
 #social-tw:hover {
- color: #4099FF;
+    color: #4099FF;
 }
+
 #social-yt:hover {
- color: #d34836;
+    color: #d34836;
 }
+
 #social-sp:hover {
- color: #1ed760;
+    color: #1ed760;
+}
+
+#whoisshe {
+    height: 100%;
+    margin: auto;
+    display: block;
 }
