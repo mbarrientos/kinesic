@@ -4,6 +4,8 @@ from django.views.generic.base import ContextMixin
 
 from core.models import Event, GalleryPhoto
 
+__all__ = ['TourView', 'LandingView', 'WhoIsSheView']
+
 
 class TourView(ListView):
     model = Event
@@ -18,3 +20,7 @@ class LandingView(TemplateView, ContextMixin):
         context['gallery_photos'] = GalleryPhoto.objects.all()
 
         return context
+
+
+class WhoIsSheView(TemplateView):
+    template_name = 'whoisshe.html'
