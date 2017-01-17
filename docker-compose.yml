@@ -24,7 +24,11 @@ services:
 
   postgres:
     image: postgres
+    volumes:
+      - ./.data/pgdata:${PGDATA}
+      - ./logs/postgresql:/var/log/postgresql
     environment:
       - POSTGRES_USER=${DB_DEFAULT_USER}
       - POSTGRES_PASSWORD=${DB_DEFAULT_PASSWORD}
       - POSTGRES_DB=${DB_DEFAULT_NAME}
+      - PGDATA=/var/lib/postgresql/data/pgdata
