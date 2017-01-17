@@ -8,11 +8,10 @@ services:
     build: .
     image: kinesic
     ports:
-      - "8000"
+      - "8000:8000"
     volumes:
       - .:/usr/src/app/
       - ./logs/kinesic:/var/log/kinesic
-      - static_files:/usr/src/app/static
     links:
       - postgres
     environment:
@@ -23,23 +22,9 @@ services:
       - DB_DEFAULT_NAME=${DB_DEFAULT_NAME}
       - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
 
-  nginx:
-    build: ./nginx
-    image: nginx
-    ports:
-      - "80:9000"
-    links:
-      - app
-    volumes:
-      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - static_files:/usr/src/app/static:ro
-
   postgres:
     image: postgres
     environment:
       - POSTGRES_USER=${DB_DEFAULT_USER}
       - POSTGRES_PASSWORD=${DB_DEFAULT_PASSWORD}
       - POSTGRES_DB=${DB_DEFAULT_NAME}
-
-volumes:
-  static_files: {}

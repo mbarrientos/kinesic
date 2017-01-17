@@ -3,5 +3,7 @@
   "app_type": "wsgi",
   "startup_file": "kinesic_web/wsgi.py",
   "port": "8000",
-  "address": "0.0.0.0"
+  "address": "0.0.0.0",
+  "static_files_dir": "/usr/src/app/static",
+  "nginx_config_template": "config/nginx/nginx.conf.erb"
 }
