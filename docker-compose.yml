@@ -24,6 +24,7 @@ services:
       - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
 
   nginx:
+    build: ./nginx
     image: nginx
     ports:
       - "80:9000"
