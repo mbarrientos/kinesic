@@ -19,7 +19,7 @@ class Production(Base):
 
     SECRET_KEY = values.SecretValue()
 
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['.kinesicband.com']
 
     DATABASES = {
         'default': {
